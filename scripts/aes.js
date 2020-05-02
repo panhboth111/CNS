@@ -689,9 +689,9 @@ function execute(operation) {
   const key = document.getElementById("key").value;
   const result =
     operation == 0
-      ? Aes.Ctr.encrypt(input, key, 256)
-      : Aes.Ctr.decrypt(input, key, 256);
-  document.getElementById("result").innerHTML = `Your result is ${result}`;
-
+      ? `Your ciphertext is ${Aes.Ctr.encrypt(input, key, 256)}`
+      : `Your plaintext is ${Aes.Ctr.decrypt(input, key, 256)}`;
+  document.getElementById("resultBox").style.visibility = "visible";
+  document.getElementById("resultBox").innerHTML = result;
   return false;
 }

@@ -51,7 +51,7 @@
               <button
                 onclick="execute(0)"
                 type="button"
-                class="bg-green-500 hover:bg-primary-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider"
+                class="bg-green-500 hover:bg-blue-600 w-full p-4 text-sm text-white uppercase font-bold tracking-wider"
               >
                 Encrypt
               </button>
@@ -60,13 +60,25 @@
               <button
                 onclick="execute(1)"
                 type="button"
-                class="bg-red-600 hover:bg-primary-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider"
+                class="bg-red-600 hover:bg-pink-600 w-full p-4 text-sm text-white uppercase font-bold tracking-wider"
               >
                 Decrypt
               </button>
             </div>
-            <p id="result" class="text-sm"></p>
           </form>
+        </div>
+        <div
+          id="resultBox"
+          class="bg-opacity-100 border border-green-500 shadow m-4 text-center text-green-500"
+          style="visibility: hidden;"
+        ></div>
+        <div class="text-center">
+          <button
+            type="button"
+            class="bg-teal-600 hover:bg-yellow-600 p-2 mt-1 w-full text-sm text-white uppercase font-bold tracking-wider"
+          >
+            <a href="http://13.59.245.222:5000/">Nara's RC4 encryption</a>
+          </button>
         </div>
       </div>
     </div>
