@@ -1,0 +1,14 @@
+{
+  "name": "CNS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/panhboth111/CNS",
+  "author": "panhboth111 <neakpanhboth18@kit.edu.kh>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
